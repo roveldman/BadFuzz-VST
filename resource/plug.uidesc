@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vstgui-ui-description version="1">
+	<fonts>
+		<font font-name="Comic Sans MS" name="Big Meme" size="32"/>
+		<font font-name="Comic Sans MS" name="Meme" size="15"/>
+	</fonts>
+	<colors>
+	</colors>
+	<template background-color="~ BlackCColor" background-color-draw-style="stroked" class="CViewContainer" mouse-enabled="true" name="view" opacity="1" origin="0, 0" size="300, 300" transparent="false" wants-focus="false">
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextLabel" default-value="0.5" font="Meme" font-antialias="true" font-color="~ RedCColor" frame-color="~ TransparentCColor" frame-width="1" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="70, 150" round-rect-radius="6" shadow-color="~ TransparentCColor" size="100, 30" style-3D-in="false" style-3D-out="false" style-no-draw="false" style-no-frame="false" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="center" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" title="amount" transparent="false" value-precision="2" wants-focus="false" wheel-inc-value="0.1"/>
+		<view background-color="~ TransparentCColor" background-color-draw-style="filled and stroked" bitmap="doge" class="CViewContainer" mouse-enabled="true" opacity="0.48855" origin="10, 10" size="280, 280" transparent="false" wants-focus="false"/>
+		<view bitmap-offset="0, 0" class="CSlider" control-tag="Parameter1" default-value="0.5" draw-back="true" draw-back-color="~ WhiteCColor" draw-frame="true" draw-frame-color="~ GreyCColor" draw-value="true" draw-value-color="~ RedCColor" draw-value-from-center="false" draw-value-inverted="false" frame-width="1" handle-offset="0, 0" max-value="1" min-value="0" mode="free click" mouse-enabled="true" opacity="1" orientation="vertical" origin="40, 70" reverse-orientation="false" size="40, 200" transparent="false" wants-focus="true" wheel-inc-value="0.1" zoom-factor="10"/>
+		<view back-color="~ TransparentCColor" background-offset="0, 0" class="CTextLabel" default-value="0.5" font="Big Meme" font-antialias="true" font-color="~ BlackCColor" frame-color="~ TransparentCColor" frame-width="1" max-value="1" min-value="0" mouse-enabled="true" opacity="1" origin="70, 10" round-rect-radius="6" shadow-color="~ TransparentCColor" size="160, 50" style-3D-in="false" style-3D-out="false" style-no-draw="false" style-no-frame="false" style-no-text="false" style-round-rect="false" style-shadow-text="false" text-alignment="center" text-inset="0, 0" text-rotation="0" text-shadow-offset="1, 1" title="bad fuzz" transparent="false" value-precision="2" wants-focus="false" wheel-inc-value="0.1"/>
+	</template>
+	<custom>
+		<attributes name="FocusDrawing"/>
+		<attributes Path="plug.uidesc" name="VST3Editor"/>
+		<attributes Grids="1x 1,5x 5,10x 10,12x 12,15x 15" name="UIGridController"/>
+		<attributes SelectedTemplate="view" name="UITemplateController"/>
+		<attributes EditViewScale="1" EditorSize="0, 0, 829, 771" SplitViewSize_0_0="0.8255033557046980163818261644337326288223" SplitViewSize_0_1="0.1476510067114094049145478493301197886467" SplitViewSize_1_0="0.4845637583892617450409545654110843315721" SplitViewSize_1_1="0.5087248322147650547719877067720517516136" SplitViewSize_2_0="0.7080820265379975664288281222980003803968" SplitViewSize_2_1="0.2858866103739445274634078941744519397616" TabSwitchValue="0" Version="1" name="UIEditController"/>
+		<attributes name="UIAttributesController"/>
+		<attributes SelectedRow="30" name="UIViewCreatorDataSource"/>
+		<attributes SelectedRow="0" name="UIBitmapsDataSource"/>
+		<attributes SelectedRow="0" name="UIFontsDataSource"/>
+		<attributes SelectedRow="0" name="UIGradientsDataSource"/>
+		<attributes SelectedRow="1" name="UITagsDataSource"/>
+	</custom>
+	<bitmaps>
+		<bitmap name="doge" path="doge.png"/>
+	</bitmaps>
+	<gradients>
+		<gradient name="New">
+			<color-stop rgba="#ffffffff" start="0"/>
+			<color-stop rgba="#000000ff" start="1"/>
+		</gradient>
+	</gradients>
+	<control-tags>
+		<control-tag name="Bypass" tag="100"/>
+		<control-tag name="Parameter1" tag="102"/>
+	</control-tags>
+</vstgui-ui-description>
