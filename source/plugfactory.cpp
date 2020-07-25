@@ -53,7 +53,7 @@ BEGIN_FACTORY_DEF (stringCompanyName, stringCompanyWeb,	stringCompanyEmail)
 				stringSubCategory,		// Subcategory for this Plug-in (to be changed)
 				FULL_VERSION_STR,		// Plug-in version (to be changed)
 				kVstVersionString,		// the VST 3 SDK version (do not changed this, use always this define)
-				Steinberg::HelloWorld::PlugProcessor::createInstance)	// function pointer called when this component should be instantiated
+				Steinberg::BadFuzz::PlugProcessor::createInstance)	// function pointer called when this component should be instantiated
 
 	DEF_CLASS2 (INLINE_UID_FROM_FUID(Steinberg::BadFuzz::MyControllerUID),
 				PClassInfo::kManyInstances,  // cardinality   
@@ -63,7 +63,7 @@ BEGIN_FACTORY_DEF (stringCompanyName, stringCompanyWeb,	stringCompanyEmail)
 				"",						// not used here
 				FULL_VERSION_STR,		// Plug-in version (to be changed)
 				kVstVersionString,		// the VST 3 SDK version (do not changed this, use always this define)
-				Steinberg::HelloWorld::PlugController::createInstance)// function pointer called when this component should be instantiated
+				Steinberg::BadFuzz::PlugController::createInstance)// function pointer called when this component should be instantiated
 
 END_FACTORY
 
